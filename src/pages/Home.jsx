@@ -1,4 +1,5 @@
 import { EthereumIcon } from "../assets/icons";
+import FeatureNftItem from "../components/home/FeatureNftItem";
 import { topColletions } from "../constants";
 
 const Home = () => {
@@ -58,7 +59,7 @@ const Home = () => {
       </div>
 
       {/* amaze NFT section*/}
-      <div className="mt-28 bg-[#F7F9FB]">
+      <div className="mt-28 bg-brand-gray">
         <div className="container mx-auto">
           <div className="py-5 lg:py-32">
             <div className="flex flex-col lg:flex-row lg:justify-between gap-5 lg:gap-24">
@@ -127,190 +128,216 @@ const Home = () => {
       {/* Collection Over */}
       <div className="my-28">
         <div className="container mx-auto">
-          <div>
-            <div className="grid  gap-y-8 md:gap-12 grid-cols-12">
-              {/* col one */}
-              <div className="col-span-12 lg:col-span-6 xl:col-span-4 2xl:col-span-5">
-                <div>
+          <div className="grid gap-y-8 md:gap-12 grid-cols-12">
+            {/* col one */}
+            <div className="col-span-12 lg:col-span-6 xl:col-span-4 2xl:col-span-5">
+              <div>
+                <img
+                  src="./images/collection-image4.jpg"
+                  className="rounded-lg w-full max-h-[420px] object-cover"
+                  alt="collection"
+                />
+              </div>
+
+              <div className="flex justify-between mt-8">
+                <div className="flex gap-3">
                   <img
-                    src="./images/collection-image4.jpg"
-                    className="rounded-lg w-full max-h-[420px] object-cover"
+                    src="./images/user.jpg"
+                    className="w-12 h-12 rounded-full object-cover"
+                    alt="user"
+                  />
+
+                  <div>
+                    <h4 className="text-xl font-bold">The Futr Abstr</h4>
+                    <p className="text-[14px] text-[#696969]">
+                      10 in the stock
+                    </p>
+                  </div>
+                </div>
+
+                <div>
+                  <p className="text-[12px] font-medium">Highest Bid</p>
+                  <div className="font-bold text-base">
+                    <img
+                      src="./images/ethereum.svg"
+                      className="h-4 inline-block mr-1"
+                      alt="ethereum"
+                    />
+                    <span>0.25 ETH</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* col two */}
+            <div className="col-span-12 lg:col-span-6 xl:col-span-4 2xl:col-span-3">
+              <div className="flex gap-4">
+                <div className="max-w-[150px]">
+                  <img
+                    src="./images/collection-image2.jpg"
+                    className="w-full h-full rounded-lg"
                     alt="collection"
                   />
                 </div>
 
-                <div className="flex justify-between mt-8">
-                  <div className="flex gap-3">
+                <div>
+                  <h5 className="font-bold text-xl">The Futr Abstr</h5>
+
+                  <div className="flex items-center gap-2 mt-2 mb-4">
                     <img
                       src="./images/user.jpg"
-                      className="w-12 h-12 rounded-full object-cover"
+                      className="w-[34px] h-[34px] rounded-full object-cover"
                       alt="user"
                     />
 
-                    <div>
-                      <h4 className="text-xl font-bold">The Futr Abstr</h4>
-                      <p className="text-[14px] text-[#696969]">
-                        10 in the stock
-                      </p>
-                    </div>
+                    <button className="flex items-center gap-1 border border-[#00AC4F] rounded-md px-2 py-1 text-[#00AC4F] text-[12px] font-bold">
+                      <EthereumIcon className="h-[14px]" />
+                      <span>0.2 ETH</span>
+                    </button>
+                    <span className="text-[#757575] text-[14px]">1 of 8</span>
                   </div>
 
-                  <div>
-                    <p className="text-[12px] font-medium">Highest Bid</p>
-                    <div className="font-bold text-base">
+                  <button className="btn-outlined">Place a bid</button>
+                </div>
+              </div>
+
+              <div className="my-10 flex gap-4">
+                <div className="max-w-[150px]">
+                  <img
+                    src="./images/collection-image3.jpg"
+                    className="w-full h-full rounded-lg"
+                    alt="collection"
+                  />
+                </div>
+
+                <div>
+                  <h5 className="font-bold text-xl">Lorem ipsum dolor</h5>
+
+                  <div className="flex items-center gap-2 mt-2 mb-4">
+                    <img
+                      src="./images/user.jpg"
+                      className="w-[34px] h-[34px] rounded-full object-cover"
+                      alt="user"
+                    />
+
+                    <button className="flex items-center gap-1 border border-[#00AC4F] rounded-md px-2 py-1 text-[#00AC4F] text-[12px] font-bold">
+                      <EthereumIcon className="h-[14px]" />
+                      <span>0.2 ETH</span>
+                    </button>
+                    <span className="text-[#757575] text-[14px]">1 of 8</span>
+                  </div>
+
+                  <button className="btn-outlined">Place a bid</button>
+                </div>
+              </div>
+
+              <div className="flex gap-4">
+                <div className="max-w-[150px]">
+                  <img
+                    src="./images/collection-image1.jpg"
+                    className="w-full h-full rounded-lg"
+                    alt="collection"
+                  />
+                </div>
+
+                <div>
+                  <h5 className="font-bold text-xl">Consectetur adipis</h5>
+
+                  <div className="flex items-center gap-2 mt-2 mb-4">
+                    <img
+                      src="./images/user.jpg"
+                      className="w-[34px] h-[34px] rounded-full object-cover"
+                      alt="user"
+                    />
+
+                    <button className="flex items-center gap-1 border border-[#00AC4F] rounded-md px-2 py-1 text-[#00AC4F] text-[12px] font-bold">
+                      <EthereumIcon className="h-[14px]" />
+                      <span>0.2 ETH</span>
+                    </button>
+                    <span className="text-[#757575] text-[14px]">1 of 8</span>
+                  </div>
+
+                  <button className="btn-outlined">Place a bid</button>
+                </div>
+              </div>
+            </div>
+
+            {/* col three */}
+            <div className="col-span-12 lg:col-span-12 xl:col-span-4 2xl:col-span-4 2xl:border-l 2xl:pl-8">
+              <h4 className="text-xl font-bold font-IntegralCF">
+                Top Collections over
+              </h4>
+              <p className="text-lg font-bold text-[#3D00B7] mb-8 mt-1">
+                Last 7 days
+              </p>
+
+              <div className="divide-y">
+                {topColletions.map((item, index) => (
+                  <div
+                    className="flex gap-8 items-center py-3"
+                    key={item.title}
+                  >
+                    <div className="w-5 font-bold text-2xl">{index + 1}</div>
+
+                    <div className="relative">
                       <img
-                        src="./images/ethereum.svg"
-                        className="h-4 inline-block mr-1"
-                        alt="ethereum"
+                        className="h-[60px] w-[60px] rounded-full"
+                        src={item.image}
+                        alt={item.title}
                       />
-                      <span>0.25 ETH</span>
+                      {item.isSlected ? (
+                        <img
+                          className="w-8 h-8 absolute -top-2 -right-3"
+                          src="./images/check-fill.png"
+                        />
+                      ) : null}
+                    </div>
+
+                    <div className="flex-1">
+                      <p className="text-base font-medium">{item.title}</p>
+                      <p className="flex items-center gap-1 text-[14px] font-semibold text-[#636363]">
+                        <EthereumIcon className="h-4 text-[#000]" />
+                        {item.price}
+                      </p>
+                    </div>
+
+                    <div
+                      className={`flex-1 text-right text-xl font-semibold ${
+                        item.isSlected ? "text-[#14C8B0]" : "text-[#FF002E]"
+                      }`}
+                    >
+                      {item.percentage}
                     </div>
                   </div>
-                </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Collection NFT */}
+      <div className="mt-28 bg-brand-gray">
+        <div className="container mx-auto">
+          <div className="py-5 lg:py-32">
+            <h3 className="uppercase font-IntegralCF font-bold text-[28px] mb-12">
+              Collection Featured NFTs
+            </h3>
+
+            <div className="grid gap-y-8 md:gap-12 grid-cols-12">
+              {/* col one */}
+              <div className="col-span-12 lg:col-span-4">
+                <FeatureNftItem />
               </div>
 
               {/* col two */}
-              <div className="col-span-12 lg:col-span-6 xl:col-span-4 2xl:col-span-3">
-                <div className="flex gap-4">
-                  <div className="max-w-[150px]">
-                    <img
-                      src="./images/collection-image2.jpg"
-                      className="w-full h-full rounded-lg"
-                      alt="collection"
-                    />
-                  </div>
-
-                  <div>
-                    <h5 className="font-bold text-xl">The Futr Abstr</h5>
-
-                    <div className="flex items-center gap-2 mt-2 mb-4">
-                      <img
-                        src="./images/user.jpg"
-                        className="w-[34px] h-[34px] rounded-full object-cover"
-                        alt="user"
-                      />
-
-                      <button className="flex items-center gap-1 border border-[#00AC4F] rounded-md px-2 py-1 text-[#00AC4F] text-[12px] font-bold">
-                        <EthereumIcon className="h-[14px]" />
-                        <span>0.2 ETH</span>
-                      </button>
-                      <span className="text-[#757575] text-[14px]">1 of 8</span>
-                    </div>
-
-                    <button className="btn-outlined">Place a bid</button>
-                  </div>
-                </div>
-
-                <div className="my-10 flex gap-4">
-                  <div className="max-w-[150px]">
-                    <img
-                      src="./images/collection-image3.jpg"
-                      className="w-full h-full rounded-lg"
-                      alt="collection"
-                    />
-                  </div>
-
-                  <div>
-                    <h5 className="font-bold text-xl">Lorem ipsum dolor</h5>
-
-                    <div className="flex items-center gap-2 mt-2 mb-4">
-                      <img
-                        src="./images/user.jpg"
-                        className="w-[34px] h-[34px] rounded-full object-cover"
-                        alt="user"
-                      />
-
-                      <button className="flex items-center gap-1 border border-[#00AC4F] rounded-md px-2 py-1 text-[#00AC4F] text-[12px] font-bold">
-                        <EthereumIcon className="h-[14px]" />
-                        <span>0.2 ETH</span>
-                      </button>
-                      <span className="text-[#757575] text-[14px]">1 of 8</span>
-                    </div>
-
-                    <button className="btn-outlined">Place a bid</button>
-                  </div>
-                </div>
-
-                <div className="flex gap-4">
-                  <div className="max-w-[150px]">
-                    <img
-                      src="./images/collection-image1.jpg"
-                      className="w-full h-full rounded-lg"
-                      alt="collection"
-                    />
-                  </div>
-
-                  <div>
-                    <h5 className="font-bold text-xl">Consectetur adipis</h5>
-
-                    <div className="flex items-center gap-2 mt-2 mb-4">
-                      <img
-                        src="./images/user.jpg"
-                        className="w-[34px] h-[34px] rounded-full object-cover"
-                        alt="user"
-                      />
-
-                      <button className="flex items-center gap-1 border border-[#00AC4F] rounded-md px-2 py-1 text-[#00AC4F] text-[12px] font-bold">
-                        <EthereumIcon className="h-[14px]" />
-                        <span>0.2 ETH</span>
-                      </button>
-                      <span className="text-[#757575] text-[14px]">1 of 8</span>
-                    </div>
-
-                    <button className="btn-outlined">Place a bid</button>
-                  </div>
-                </div>
+              <div className="col-span-12 lg:col-span-4">
+                <FeatureNftItem />
               </div>
 
               {/* col three */}
-              <div className="col-span-12 lg:col-span-12 xl:col-span-4 2xl:col-span-4 2xl:border-l 2xl:pl-8">
-                <h4 className="text-xl font-bold font-IntegralCF">
-                  Top Collections over
-                </h4>
-                <p className="text-lg font-bold text-[#3D00B7] mb-8 mt-1">
-                  Last 7 days
-                </p>
-
-                <div className="divide-y">
-                  {topColletions.map((item, index) => (
-                    <div
-                      className="flex gap-8 items-center py-3"
-                      key={item.title}
-                    >
-                      <div className="w-5 font-bold text-2xl">{index + 1}</div>
-
-                      <div className="relative">
-                        <img
-                          className="h-[60px] w-[60px] rounded-full"
-                          src={item.image}
-                          alt={item.title}
-                        />
-                        {item.isSlected ? (
-                          <img
-                            className="w-8 h-8 absolute -top-2 -right-3"
-                            src="./images/check-fill.png"
-                          />
-                        ) : null}
-                      </div>
-
-                      <div className="flex-1">
-                        <p className="text-base font-medium">{item.title}</p>
-                        <p className="flex items-center gap-1 text-[14px] font-semibold text-[#636363]">
-                          <EthereumIcon className="h-4 text-[#000]" />
-                          {item.price}
-                        </p>
-                      </div>
-
-                      <div
-                        className={`flex-1 text-right text-xl font-semibold ${
-                          item.isSlected ? "text-[#14C8B0]" : "text-[#FF002E]"
-                        }`}
-                      >
-                        {item.percentage}
-                      </div>
-                    </div>
-                  ))}
-                </div>
+              <div className="col-span-12 lg:col-span-4">
+                <FeatureNftItem />
               </div>
             </div>
           </div>
